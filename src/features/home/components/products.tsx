@@ -25,7 +25,7 @@ const PRODUCTS: Product[] = [
   },
 ];
 
-export default function NewArrivals() {
+export default function Products() {
   return (
     <section className="w-full px-5 pt-[39px] pb-12 md:px-8 min-[1440px]:px-16">
       <div className="mx-auto max-w-[1440px]">
