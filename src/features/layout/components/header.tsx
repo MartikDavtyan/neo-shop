@@ -10,7 +10,7 @@ const NAV = [
   { label: 'Our story', href: '/' },
 ];
 
-export function Header() {
+export default function Header() {
   return (
     <header className="relative h-[154px] w-full bg-background">
       <div className="absolute inset-x-0 top-0 flex h-[30px] items-center justify-center bg-announcement text-[10px] leading-[1.5] text-primary">
