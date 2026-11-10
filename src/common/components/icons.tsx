@@ -19,11 +19,45 @@ export function SearchIcon({ className }: IconProps) {
   );
 }
 
-export function MoonIcon({ className }: IconProps) {
+export function MoonIcon({
+  theme,
+  className,
+}: {
+  theme: 'light' | 'dark';
+  className?: string;
+}) {
   return (
-    <svg {...base} className={className}>
-      <path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z" />
-    </svg>
+    <>
+      {theme === 'dark' ? (
+        <svg
+          {...base}
+          className={className}
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <circle cx="12" cy="12" r="4" />
+          <line x1="12" y1="2" x2="12" y2="4" />
+          <line x1="12" y1="20" x2="12" y2="22" />
+          <line x1="4.93" y1="4.93" x2="6.34" y2="6.34" />
+          <line x1="17.66" y1="17.66" x2="19.07" y2="19.07" />
+          <line x1="2" y1="12" x2="4" y2="12" />
+          <line x1="20" y1="12" x2="22" y2="12" />
+          <line x1="4.93" y1="19.07" x2="6.34" y2="17.66" />
+          <line x1="17.66" y1="6.34" x2="19.07" y2="4.93" />
+        </svg>
+      ) : (
+        <svg {...base} className={className}>
+          <path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z" />
+        </svg>
+      )}
+    </>
   );
 }
 

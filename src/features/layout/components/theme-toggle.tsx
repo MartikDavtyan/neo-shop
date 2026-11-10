@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { MoonIcon } from './icons';
+import { MoonIcon } from '@/common/components/icons';
 
 type Theme = 'light' | 'dark';
 
@@ -32,7 +32,7 @@ export default function ThemeToggle({ className }: { className?: string }) {
       aria-pressed={theme === 'dark'}
       className={`flex size-6 items-center justify-center text-primary transition-opacity hover:opacity-60 ${className ?? ''}`}
     >
-      <MoonIcon className="size-6" />
+      <MoonIcon theme={theme} className="size-6" />
     </button>
   );
 }

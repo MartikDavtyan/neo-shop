@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { BagIcon, SearchIcon, UserIcon } from '@/common/components/icons';
-import ThemeToggle from '@/common/components/theme-toggle';
+import ThemeToggle from './theme-toggle';
 
 const NAV = [
   { label: 'New arrivals', href: '/catalog' },
