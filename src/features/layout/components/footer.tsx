@@ -9,7 +9,7 @@ const CLIENT_SERVICES = [
 ];
 const BRAND = ['Our philosophy', 'Materials & makers', 'Journal', 'Instagram'];
 
-export function SiteFooter() {
+export default function Footer() {
   return (
     <footer className="w-full bg-footer px-5 pt-[35px] pb-[29px] md:px-8 min-[1440px]:px-16">
       <div className="mx-auto max-w-[1440px]">

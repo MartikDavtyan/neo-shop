@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Libre_Caslon_Display } from 'next/font/google';
 import Header from '@/features/layout/components/header';
+import Footer from '@/features/layout/components/footer';
 import './globals.css';
 
 const inter = Inter({
@@ -47,6 +48,7 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
